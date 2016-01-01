@@ -1,0 +1,3 @@
+Name, Age, Birthday,   Student, Favorite Food
+John, 16,  2000-01-01, true,    "apple, bread"
+Tom,  26,  1991-01-01, false,   "fruit: apple, banana; meat: beef, chicken"
