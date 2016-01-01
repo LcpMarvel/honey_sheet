@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<ss:Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+
+  <ss:Worksheet ss:Name="users">
+    <ss:Table>
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String">Name</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">Age</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">Birthday</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">Student</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">Favorite Food</ss:Data></ss:Cell>
+      </ss:Row>
+
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String">John</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="Number">16</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">2000-01-01</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">true</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">apple, bread</ss:Data></ss:Cell>
+      </ss:Row>
+
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String">Tom</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="Number">26</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">1991-01-01</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">false</ss:Data></ss:Cell>
+        <ss:Cell><ss:Data ss:Type="String">fruit: apple, banana; meat: beef, chicken</ss:Data></ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+</ss:Workbook>
