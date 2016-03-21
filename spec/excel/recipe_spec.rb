@@ -4,6 +4,7 @@ describe HoneySheet::Excel::Recipe do
   describe 'transform method' do
     it 'transforms object to excel type' do
       excel_mod = HoneySheet::Excel
+      custom_struct = Struct.new("CustomStruct", :name).new(name: "abc")
 
       {
         1                                       => [1, :number],
@@ -18,7 +19,8 @@ describe HoneySheet::Excel::Recipe do
         { k1: 'v1', k2: 'v2' }                  => ['k1: v1; k2: v2', :string],
         Time.new(2016, 1, 1, 0, 0, 0)           => ['2016-01-01 00:00:00', :string],
         Date.new(2016, 01, 01)                  => ['2016-01-01', :string],
-        DateTime.new(2016, 1, 1, 0, 0, 0, '+8') => ['2016-01-01 00:00:00', :string]
+        DateTime.new(2016, 1, 1, 0, 0, 0, '+8') => ['2016-01-01 00:00:00', :string],
+        custom_struct                           => [custom_struct, :string]
       }.each do |record, (value, type)|
         expect(
           excel_mod::Recipe.transform(record)
