@@ -58,10 +58,6 @@ module HoneySheet
 
         alias_method :integer_recipe, :fixnum_recipe
         alias_method :float_recipe, :fixnum_recipe
-
-        def self.method_missing(method_name, *args)
-          string_recipe(*args)
-        end
       end
     end
   end
